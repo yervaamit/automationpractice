@@ -18,7 +18,7 @@ public class AutomationHome {
 
     @FindBy(xpath = "//li/*[@title='Women']")
     private WebElement womenItems;
-    @FindBy(xpath = "//div[@id='block_top_menu']//li[1]//*[@title='T-shirts']")
+    @FindBy(xpath = "//div[@id='block_top_menu']//li[3]//*[@title='T-shirts']")
     private WebElement womenTShirts;
 
     public AutomationHome(WebDriver driver) {
@@ -32,9 +32,7 @@ public class AutomationHome {
     }
 
     public void selectTShirts() {
-        Actions action = new Actions(driver);
-        action.moveToElement(womenItems).perform();
-
+        womenTShirts.click();
     }
 
 }
