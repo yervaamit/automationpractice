@@ -57,7 +57,6 @@ public class Authenticate {
         AutomationHome homePage = new AutomationHome(driver);
         Authenticate authenticate = new Authenticate(driver);
         homePage.signIn();
-
         authenticate.setEmailAddr("test-amit@test.com");
         authenticate.setPassword("12345678");
         clickSignInButton();
