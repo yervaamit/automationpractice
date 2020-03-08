@@ -71,8 +71,13 @@ public class BaseTest {
     }
 
     public static String getValue(String key) {
-
         return prop.getProperty(key);
+    }
+
+    public void scrollDownByPixels(int pixels) throws InterruptedException {
+        Thread.sleep(2000);
+        JavascriptExecutor js = (JavascriptExecutor) webDriver;
+        js.executeScript("window.scrollBy(0," + pixels +")");
     }
 
 
