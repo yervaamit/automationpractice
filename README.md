@@ -1,4 +1,3 @@
-# Practice 
 Assignment of selenium automation of an ecommerce site
 
 There are 2 test files:
